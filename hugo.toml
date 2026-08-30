@@ -1,0 +1,4 @@
+baseURL = 'https://site.demmo.top/'
+locale = 'zh-cn'
+title = 'demmo-site Project'
+theme = "blowfish"

@@ -1,0 +1,38 @@
+locale = "zh-cn"
+label = "简体中文"
+weight = 9
+title = "   "
+
+[params]
+displayName = "简体中文"
+isoCode = "zh-cn"
+rtl = false
+dateFormat = "2006-01-02"
+logo = "img/DEMMO.png"
+description = "专注嵌入式软硬件设计，提供从底层驱动到上层应用的全栈嵌入式解决方案。"
+copyright = "2026 得墨个人工作室. 版权所有."
+
+
+[params.author]
+name = ""
+email = "wlc@demmo.com"
+image = "img/demmo-round.png"
+imageQuality = 96
+headline = "💻 嵌入式软件专家 | ⚡ 硬件开发"
+# bio: 详细介绍，支持 Markdown 语法和 Emoji
+bio = """
+👋 欢迎来到我的技术空间！
+
+我是一名专注于 **嵌入式系统** 的全栈开发者。
+
+🔧 **核心业务：**
+- **嵌入式软件**：STM32/ESP32 驱动开发、RTOS 移植、Linux 应用编程。
+- **硬件设计**：原理图设计、PCB Layout、弱电系统集成。
+- **物联网**：MQTT 协议、云平台对接、智能家居方案。
+
+这里记录了我的项目案例与技术心得。
+"""
+  links = [
+    # { x-twitter = "https://twitter.com/burufugu" },
+    # { github = "https://github.com/nunocoracao/blowfish" },
+  ]
