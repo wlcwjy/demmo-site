@@ -1,8 +1,8 @@
 ---
 title: "ACDC1800W Core Board" 
-date: 2026-09-01 
 type: 'sample' 
 layout: 'single' 
+weight: 1
 cascade: 
     showDate: false 
     showAuthor: false 

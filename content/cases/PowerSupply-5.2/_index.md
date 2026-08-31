@@ -1,8 +1,8 @@
 ---
 title: "DCDC-MPPT 数字电源"
-date: 2026-09-01 
 type: 'sample'
 layout: 'single'
+weight: 2
 cascade:
   showDate: false
   showAuthor: false

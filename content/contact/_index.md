@@ -1,7 +1,7 @@
 ---
 date: '2026-08-27T17:33:00+08:00'
 draft: false
-title: '联系我们'
+title: '联系'
 layout: "single"
 
 cascade:

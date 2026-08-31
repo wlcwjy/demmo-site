@@ -1,8 +1,8 @@
 ---
 title: "DCDC-MPPT Digital Power Supply" 
-date: 2026-09-01 
 type: 'sample' 
 layout: 'single' 
+weight: 2
 cascade:   
     showDate: false   
     showAuthor: false   
