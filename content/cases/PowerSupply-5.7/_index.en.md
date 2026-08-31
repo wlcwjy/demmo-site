@@ -1,105 +1,100 @@
 ---
-title: "ACDC1800W Core Board" 
+title: "BOOST Power Supply Based on EG1164" 
 type: 'sample' 
 layout: 'single' 
-weight: 3
-date: 2027-08-28
+weight: 3 
+date: 2026-08-31 
 cascade: 
     showDate: false 
     showAuthor: false 
     invertPagination: true
 ---
 
-## Introduction
-<div style="text-align: justify;">
-  The ACDC1800W Core Board is a high-performance embedded solution based on the STM32F105RxT6 microcontroller, integrated with a Bluetooth wireless communication module. Designed specifically for IoT applications, the system features AC/DC power conversion control, intelligent fan thermal management, LED status indication, CAN communication interfaces, and comprehensive power/load protection monitoring. The software architecture implements precise GPIO control, ADC sampling, and PWM output logic tailored to the hardware schematic.
-</div>
+  ## Introduction
 
-## Hardware Showcase
+  ------
 
-{{< figure src="featured.png"
-title="STM32 Core Board Hardware"
-caption="💡 Features high-density component placement, integrating multi-phase power management and high-speed signal processing units to demonstrate extreme PCB space utilization."
-alt="STM32 Core Board"
-width="800" >}}
+  &emsp;&emsp;This module is a smart power driver board specifically designed for telescopic pole mechanisms. Utilizing the high-performance EG1164 chip as its core controller, the system achieves an efficient BOOST step-up conversion from a 12V DC input to a 24V DC output. Through an onboard high-power relay array, it precisely controls the direction of the output current, thereby driving loads (such as electric linear actuators) to achieve bidirectional extension and retraction.
 
-{{< figure src="hardware-back.png"
-title="STM32 Core Board Hardware (Back)"
-caption="💡 Onboard high-performance Bluetooth module supports low-power wireless debugging and data transparent transmission, empowering the ACDC1800W system with flexible IoT connectivity."
-alt="STM32 Core Board Back"
-width="800" >}}
+  ## Hardware Showcase
 
-## Software Showcase
+  {{< figure src="featured.png"
+  title="DCDC-MPPT Digital Power Hardware Circuit"
+  caption="💡 3D Render of the 12V to 24V BOOST Step-up and Relay Reversing Driver Module Based on the EG1164 Chip"
+  width="800" >}}
 
-{{< figure src="software.png"
-title="STM32 Core Board Software Project"
-caption="💡 Overview of the software project engineering structure."
-alt="STM32 Core Board Software Project"
-width="800" >}}
+  ## Software Showcase
 
-## Functional Specifications
+  {{< figure src="software-main.png"
+  title="BOOST Power Supply Software Project Based on EG1164"
+  caption="💡 Software Project Showcase - Relevant code for the main function."
+  alt="BOOST Power Supply Project Based on EG1164"
+  width="800" >}}
 
-------
+  {{< figure src="software-crontab.png"
+  title="BOOST Power Supply Project Based on EG1164"
+  caption="💡 Software Project Showcase - Relevant code for scheduled tasks."
+  alt="BOOST Power Supply Project Based on EG1164"
+  width="800" >}}
 
-### 🔋 Digital Power Flow Control
+  ## Functional Specifications
 
-<div style="text-align: justify;">
+  ### 1. Core Electrical Specifications
 
-- **Dynamic Voltage/Current Regulation**: Supports real-time command execution from the host. The internal PID algorithm adjusts PWM output to achieve stepless voltage regulation and precise constant current limiting.
-- **Relay Timing Logic (Built-in Strict Power-On/Off State Machine)**:
-  - *Pre-charge*: Pre-charging detection.
-  - *Main-Connect*: Main circuit relay engagement.
-  - *Aux-Control*: Auxiliary buck board linkage control.
-- **Battery Handshake Protocol**: Automatically executes battery presence detection and voltage verification before enabling output to prevent damage from no-load or reverse connection.
+  ------
 
-</div>
+> **Input Voltage Range**: DC 12V (Nominal), supporting wide voltage input fluctuations.
 
-------
+> **Output Voltage**: Stable DC 24V (BOOST step-up mode).
 
-### ❄️ Intelligent Thermal Management System
+> **Output Current Capability**:
+>    - Continuous Output Current: 20A (Inferred from the onboard YA318-2A-U 12V 2X10A relay specifications, utilizing dual parallel or redundant design).
+>   - Peak Current: Supports short-term overloads to handle motor startup surges.
 
-<div style="text-align: justify;">
+> **Conversion Efficiency**: >90% (Benefiting from the EG1164 synchronous rectification technology and low Rds(on) MOSFETs).
 
-- **Adaptive Fan Curve**: Abandoning traditional gear-based control, the system uses continuous PWM speed regulation. The software dynamically fits the optimal speed curve based on NTC temperature sampling, balancing silence and cooling efficiency.
-- **Fan Fault Diagnosis**: Real-time monitoring of the fan FG signal (speed feedback). Upon detecting a fan stall or disconnection, the system immediately triggers derating or shutdown protection and reports fault codes.
+> **Switching Frequency**: Approximately 100kHz-150kHz (Typical operating frequency of the EG1164, working in conjunction with the onboard inductor L1 and filter capacitors).
 
-</div>
+> **Control Logic Level**: TTL/CMOS compatible (3.3V/5V can drive the optocoupler or transistor control terminals).
 
-------
+  ### 2. Hardware Architecture and Key Components
 
-### 👁️ Immersive Status Feedback
+  ------
 
-<div style="text-align: justify;">
+> **Main Control Chip**: Utilizes the **EG1164** high-voltage, high-current synchronous rectification step-up chip. This chip features built-in power MOSFETs and a high-precision feedback loop to ensure stable 24V output.
 
-- **RGB/LED Optical Language System (Intuitively conveying device "emotions" through combinations of frequency and color)**:
-  - 🟢 **Green (Solid)**: Energy Full (Charged).
-  - 🔴 **Red (2Hz Flash)**: Energy Injecting (Charging).
-  - 🟡 **Yellow (Alert)**: System Anomaly or Fault Warning.
+> **Power Switching and Reversing Unit**:
+>    - Onboard dual high-power relays.
+>    - The relays adopt an H-bridge or polarity-reversing configuration, switching contacts via logic signals to change the polarity of the output terminals (VOUT+/VOUT-), thereby achieving motor forward and reverse rotation.
 
-</div>
+> **Filtering and Energy Storage System**:
+>    - **Input/Output Filtering**: Multiple solid-state capacitors are distributed across the VIN and VOUT areas to effectively filter out high-frequency ripples and prevent battery voltage drops.
+>   - **Power Inductor**: A large-sized shielded power inductor works with the chip for energy storage and release.
 
-------
+> **Drive and Protection Circuits**:
+>    - **MOSFET Array**: Multiple TO-263 packaged high-power MOSFETs are onboard, used for auxiliary current expansion or as pre-stage switches for relay driving.
+>    - **Optocoupler Isolation**: Optocoupler components are visible near the right-side pin header, providing electrical isolation between control signals and the high-voltage power section to enhance anti-interference capabilities.
 
-### 🛡️ Multi-Dimensional Security Defense Matrix
+  ### 3. Safety Protection System
 
-<div style="text-align: justify;">
+  ------
 
-- **Hardware-Level Fast Protection**: Monitors short-circuit protection pin levels with microsecond-level response to cut off output.
-- **Software Over-Temperature/Over-Voltage Protection**: Dual ADC sampling verification to prevent single-point failures.
-- **Communication Watchdog**: CAN communication timeout detection to prevent loss of control.
+ > To ensure equipment safety during the telescopic pole operation, this module is designed with multiple protection mechanisms:
 
-</div>
+>  **Overcurrent Protection (OCP)**: The EG1164 features built-in cycle-by-cycle current limiting. When the inductor current exceeds the threshold, the output is automatically shut down to prevent MOSFET burnout.
 
-------
+>  **Over-Temperature Protection (OTP)**: The chip integrates an internal temperature sensor. When the junction temperature exceeds the safe limit (typically 150℃), it automatically reduces frequency or shuts down.
 
-## 📡 Data Acquisition & Safety Protection
+> **Input Under-Voltage/Over-Voltage Lockout (UVLO/OVP)**: Prevents damage from battery over-discharge or abnormal input voltage spikes that could break down downstream circuits.
 
-<div style="text-align: justify;">
+> **Output Short-Circuit Protection**: The circuit board rapidly cuts off the output if a short circuit occurs in the electric motor wiring.
 
-- **Multi-channel ADC Sampling**: Real-time acquisition of critical analog quantities, including:
-- **Input/Output Voltage**: Monitoring grid input and converted DC output.
-- **Output Current**: Acquiring precise current values via sampling resistors and amplifier circuits.
-- **Temperature Monitoring**: Collecting NTC thermistor data for over-temperature protection.
-- **Hardware Protection Linkage**: Monitoring short-circuit and over-voltage protection signals; the software responds immediately to cut off output once hardware-level anomalies are triggered.
+  ### 4. Application Scenarios
 
-</div>
+  ------
+
+> Electric lifting systems for surveillance poles/cameras.
+
+> Solar panel angle adjustment actuator control.
+
+> Height adjustment mechanisms for automated warehouse shelving.
