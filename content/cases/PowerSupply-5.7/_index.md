@@ -2,6 +2,7 @@
 title: "基于EG1164的BOOST电源"
 type: 'sample'
 layout: 'single'
+categories: ["电源供应"]
 weight: 3
 date: 2026-08-31
 cascade:

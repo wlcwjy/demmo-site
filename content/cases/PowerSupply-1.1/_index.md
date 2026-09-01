@@ -2,6 +2,7 @@
 title: "ACDC1800w 核心板"
 type: 'sample'
 layout: 'single'
+categories: ["电源供应"]
 weight: 1
 cascade:
   showDate: false

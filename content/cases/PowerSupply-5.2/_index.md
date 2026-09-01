@@ -2,6 +2,7 @@
 title: "DCDC-MPPT 数字电源"
 type: 'sample'
 layout: 'single'
+categories: ["电源供应"]
 weight: 2
 cascade:
   showDate: false

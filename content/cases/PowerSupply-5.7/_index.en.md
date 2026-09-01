@@ -2,6 +2,7 @@
 title: "BOOST Power Supply Based on EG1164" 
 type: 'sample' 
 layout: 'single' 
+categories: ["power supply"]
 weight: 3 
 date: 2026-08-31 
 cascade: 
