@@ -10,5 +10,6 @@ cascade:
   invertPagination: true
 ---
 
-- 邮箱：wlc@demmo.com
-- 地址：广东省东莞市南城区
+> - 邮箱：wlc@demmo.com
+
+> - 地址：广东省东莞市南城区

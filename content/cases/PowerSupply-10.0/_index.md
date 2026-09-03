@@ -2,7 +2,7 @@
 title: "智能脉冲放电与电池充电管理控制器"
 type: 'sample'
 layout: 'single'
-categories: ["电源供应"]
+categories: ["电源"]
 weight: 4
 date: 2026-09-01
 cascade:

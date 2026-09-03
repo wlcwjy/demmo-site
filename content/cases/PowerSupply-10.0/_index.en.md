@@ -2,7 +2,7 @@
 title: "Smart Pulse Discharge and Battery Charge Management Controller"
 type: 'sample'
 layout: 'single'
-categories: ["Power Supply"]
+categories: ["Power"]
 weight: 4
 date: 2026-09-01
 cascade:

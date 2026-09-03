@@ -2,7 +2,7 @@
 title: "DCDC-MPPT Digital Power Supply" 
 type: 'sample' 
 layout: 'single' 
-categories: ["power supply"]
+categories: ["power"]
 weight: 2
 cascade:   
     showDate: false   

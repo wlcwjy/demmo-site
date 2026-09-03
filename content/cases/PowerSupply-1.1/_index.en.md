@@ -2,7 +2,7 @@
 title: "ACDC1800W Core Board" 
 type: 'sample' 
 layout: 'single' 
-categories: ["power supply"]
+categories: ["power"]
 weight: 1
 cascade: 
     showDate: false 

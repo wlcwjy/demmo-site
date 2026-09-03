@@ -55,7 +55,8 @@ description: "主页展示的内容。"
 <div class="flex flex-wrap justify-center gap-4">
     <span class="px-4 py-2 bg-slate-800 rounded-full text-sm font-mono text-cyan-300 border border-slate-700">STM32 / ESP32</span>
     <span class="px-4 py-2 bg-slate-800 rounded-full text-sm font-mono text-cyan-300 border border-slate-700">FreeRTOS / Linux</span>
+    <span class="px-4 py-2 bg-slate-800 rounded-full text-sm font-mono text-cyan-300 border border-slate-700">BLE</span>
     <span class="px-4 py-2 bg-slate-800 rounded-full text-sm font-mono text-cyan-300 border border-slate-700">MQTT / IoT</span>
-    <!--<span class="px-4 py-2 bg-slate-800 rounded-full text-sm font-mono text-cyan-300 border border-slate-700">Altium Designer</span>-->
+    <span class="px-4 py-2 bg-slate-800 rounded-full text-sm font-mono text-cyan-300 border border-slate-700">RV-C</span>
   </div>
 </div>

@@ -2,7 +2,7 @@
 title: "智能脉冲电源"
 type: 'sample'
 layout: 'single'
-categories: ["电源供应"]
+categories: ["电源"]
 weight: 5
 date: 2026-09-01
 cascade:

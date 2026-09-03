@@ -2,7 +2,7 @@
 title: "Smart Pulse Power Supply"
 type: 'sample'
 layout: 'single'
-categories: ["Power Supply"]
+categories: ["Power"]
 weight: 5
 date: 2026-09-01
 cascade:
