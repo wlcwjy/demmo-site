@@ -5,6 +5,8 @@ layout: 'single'
 categories: ["电源"]
 weight: 3
 date: 2026-08-31
+draft: false
+cover: "featured.png"
 cascade:
   showDate: false
   showAuthor: false

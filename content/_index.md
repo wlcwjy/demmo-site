@@ -47,10 +47,6 @@ description: "主页展示的内容。"
 
 </div>
 
-
-   
-
-
   <h3 class="mt-12 mb-6 text-center">技术栈</h3>
 <div class="flex flex-wrap justify-center gap-4">
     <span class="px-4 py-2 bg-slate-800 rounded-full text-sm font-mono text-cyan-300 border border-slate-700">STM32 / ESP32</span>
@@ -60,3 +56,7 @@ description: "主页展示的内容。"
     <span class="px-4 py-2 bg-slate-800 rounded-full text-sm font-mono text-cyan-300 border border-slate-700">RV-C</span>
   </div>
 </div>
+
+
+<!-- {{< list title = "精选案例" limit = 3 cardView = true where = "Section" value = "cases">}} -->
+

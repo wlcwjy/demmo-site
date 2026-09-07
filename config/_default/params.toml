@@ -17,7 +17,7 @@ enableStructuredBreadcrumbs = false
 
 replyByEmail = false
 
-mainSections = ["cases"]
+mainSections = ["cases", "posts"]
 # robots = ""
 
 disableImageOptimization = false
@@ -66,8 +66,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 [homepage]
   layout = "hero" # valid options: page, profile, hero, card, background, custom
   homepageImage = "img/hero.png" # used in: hero, and card
-  showRecent = false
-  showRecentItems = 12
+  showRecent = true
+  showRecentItems = 3
   showMoreLink = true
   showMoreLinkDest = "cases"
   cardView = true
@@ -99,7 +99,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showReadingTime = true
   showTableOfContents = true
   showRelatedContent = true
-  relatedContentLimit = 9
+  relatedContentLimit = 3
   showTaxonomies = true # Enable the display of taxonomies for the related article.
   showCategories = true # These will show if showTaxonomies is true.
   showTags = true # These will show if showTaxonomies is true.

@@ -4,7 +4,9 @@ type: 'sample'
 layout: 'single'
 categories: ["电源"]
 weight: 4
+draft: false
 date: 2026-09-01
+cover: "featured.png"
 cascade:
   showDate: false
   showAuthor: false

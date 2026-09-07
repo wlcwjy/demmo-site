@@ -19,7 +19,7 @@ cascade:
  </a>
 
 <a href="202608/NY8.6802.SOP8S.FS496.zip" target="_blank" style="display: block; padding: 4px 50px; background-color: #0ea5e9; color: white; border-radius: 8px; text-decoration: none; text-align: center; font-weight: bold;">
-    NY8.6802.SOP8S.FS496.zips
+    NY8.6802.SOP8S.FS496.zip
 </a>
 
 
