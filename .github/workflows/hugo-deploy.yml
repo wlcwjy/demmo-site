@@ -20,7 +20,7 @@ jobs:
 
       # 步骤 2: 安装 Hugo
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v4
         with:
           hugo-version: 'latest'
           extended: true  # Blowfish 主题需要 extended 版本
