@@ -35,7 +35,7 @@ bio = """
 这里记录了我的项目案例与技术心得。
 """
   links = [
-     { email = "wlc:wlc@demmo.com", name = "邮箱" },
-     { csdn = "https://blog.csdn.net/wlcwjy?type=blog", name = "邮箱" },
+     { email = "wlc:wlc@demmo.com" },
+     { csdn = "https://blog.csdn.net/wlcwjy?type=blog"},
     # { github = "https://github.com/nunocoracao/blowfish" },
   ]

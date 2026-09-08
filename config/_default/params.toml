@@ -10,7 +10,7 @@ defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = false
 
 enableA11y = false
-enableSearch = true
+enableSearch = false
 enableCodeCopy = false
 enableStructuredBreadcrumbs = false
 # enableStyledScrollbar = true # disable to use native scrollbar style (defaults to true)
@@ -42,6 +42,8 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
 giteaDefaultServer = "https://git.fsfe.org"
 forgejoDefaultServer = "https://v11.next.forgejo.org"
 
+siteVersion = "1.0.1"
+
 [languageRedirect]
   enabled = false # Enable client-side language redirects for multilingual sites.
   storageKey = "blowfish_preferred_language" # localStorage key for manual language selections.
@@ -59,7 +61,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 [footer]
   showMenu = true
   showCopyright = true
-  showThemeAttribution = true
+  showThemeAttribution = false
   showAppearanceSwitcher = false
   showScrollToTop = true
 
