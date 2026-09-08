@@ -1,6 +1,5 @@
 ---
 title: "基于EG1164的BOOST电源"
-type: 'sample'
 layout: 'single'
 categories: ["电源"]
 weight: 3

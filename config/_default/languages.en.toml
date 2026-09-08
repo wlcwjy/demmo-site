@@ -4,6 +4,8 @@ label = "English"
 weight = 1
 title = ""
 
+mainSections = ["cases"]
+
 [params]
   displayName = "EN"
   isoCode = "en"
@@ -21,12 +23,12 @@ title = ""
   imageQuality = 96
   headline = "💻 Embedded Software Expert | ⚡ Hardware Development"
   bio = ""
-#   links = [
-#     { email = "mailto:hello@your_domain.com" },
-#     { link = "https://link-to-some-website.com/" },
+  links = [
+     { email = "wlc:wlc@demmo.com" },
+#    { link = "https://link-to-some-website.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
 #     { apple = "https://www.apple.com" },
-#     { blogger = "https://username.blogspot.com/" },
+     { csdn = "https://blog.csdn.net/wlcwjy?type=blog" },
 #     { bluesky = "https://bsky.app/profile/username" },
 #     { codepen = "https://codepen.io/username" },
 #     { dev = "https://dev.to/username" },
@@ -76,4 +78,5 @@ title = ""
 #     { ko-fi = "https://ko-fi.com/username" },
 #     { codeberg = "https://codeberg.org/username"},
 #     { printables = "https://www.printables.com/@username"},
-#   ]
+ #   {youtube="https://www.metajing.com/"}
+   ]

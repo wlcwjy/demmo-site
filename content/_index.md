@@ -5,7 +5,7 @@ description: "主页展示的内容。"
 
 <!-- 👇👇👇 以下内容将显示在 Hero 图片下方 👇👇👇 -->
 
-<div class="prose prose-invert max-w-prose mx-auto px-6 py-12">  
+
 
 <!-- 核心修改：父容器添加 text-center -->
 <div class="prose prose-invert max-w-prose mx-auto px-6 py-12 text-center">
@@ -14,11 +14,11 @@ description: "主页展示的内容。"
     得墨个人工作室
 </h2>
 <!-- 正文：移除 text-left，继承父级居中 -->
-<p class="text-lg text-slate-300 leading-relaxed">
+<p class="text-lg text-slate-100 leading-relaxed">
     拒绝平庸，坚持设计驱动。<br>
     构建 <span class="text-cyan-400 font-medium">物理世界</span> 与 <span class="text-cyan-400 font-medium">数字世界</span> 的桥梁。
 </p>
-</div>
+
 
 <!-- 父容器：控制两列布局 -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">

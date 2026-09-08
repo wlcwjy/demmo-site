@@ -1,6 +1,5 @@
 ---
 title: "Smart Pulse Power Supply"
-type: 'sample'
 layout: 'single'
 categories: ["Power"]
 weight: 5

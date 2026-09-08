@@ -1,6 +1,5 @@
 ---
 title: "多源输入超级电容汽车点火控制器"
-type: 'sample'
 layout: 'single'
 categories: ["汽车点火"]
 weight: 6

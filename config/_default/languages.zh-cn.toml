@@ -3,6 +3,8 @@ label = "简体中文"
 weight = 9
 title = "   "
 
+mainSections = ["cases"]
+
 [params]
 displayName = "简体中文"
 isoCode = "zh-cn"
@@ -33,6 +35,7 @@ bio = """
 这里记录了我的项目案例与技术心得。
 """
   links = [
-    # { x-twitter = "https://twitter.com/burufugu" },
+     { email = "wlc:wlc@demmo.com", name = "邮箱" },
+     { csdn = "https://blog.csdn.net/wlcwjy?type=blog", name = "邮箱" },
     # { github = "https://github.com/nunocoracao/blowfish" },
   ]

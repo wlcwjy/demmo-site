@@ -1,6 +1,5 @@
 ---
 title: "Smart Pulse Discharge and Battery Charge Management Controller"
-type: 'sample'
 layout: 'single'
 categories: ["Power"]
 weight: 4

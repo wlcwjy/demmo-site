@@ -1,6 +1,5 @@
 ---
 title: "Multi-Source Input Supercapacitor Car Jump Starter Controller"
-type: 'sample'
 layout: 'single'
 categories: ["Car Jump Starter"]
 weight: 6

@@ -1,6 +1,5 @@
 ---
 title: "BOOST Power Supply Based on EG1164" 
-type: 'sample' 
 layout: 'single' 
 categories: ["power"]
 weight: 3 

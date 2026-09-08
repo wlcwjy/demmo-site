@@ -1,6 +1,5 @@
 ---
 title: "DCDC-MPPT 数字电源"
-type: 'sample'
 layout: 'single'
 categories: ["电源"]
 weight: 2

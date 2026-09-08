@@ -5,8 +5,6 @@ description: "Showcase of homepage content."
 
 <!-- 👇👇👇 The following content will be displayed below the Hero image 👇👇👇 -->
 
-<div class="prose prose-invert max-w-prose mx-auto px-6 py-12">  
-
 <!-- Core modification: Parent container centered -->
 <div class="prose prose-invert max-w-prose mx-auto px-6 py-12 text-center">
     <!-- Title: Centered -->
@@ -18,7 +16,7 @@ description: "Showcase of homepage content."
         Driven by design, rejecting the ordinary.<br>
         Building the bridge between the <span class="text-cyan-400 font-medium">physical world</span> and the <span class="text-cyan-400 font-medium">digital world</span>.
     </p>
-</div>
+
 
 <!-- Parent container: Controls two-column layout -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
