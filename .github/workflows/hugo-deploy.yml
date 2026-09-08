@@ -1,0 +1,38 @@
+name: Daily Random Rebuild & Deploy
+
+on:
+  # 1. 每天定时触发（注意：GitHub Actions 使用 UTC 时间）
+  schedule:
+    - cron: '0 19 * * *'  # 对应北京时间凌晨 3:00 自动运行
+  
+  # 2. 允许你随时在 GitHub 网页上手动点击运行（方便测试）
+  workflow_dispatch: 
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 步骤 1: 拉取你的代码（fetch-depth: 0 是为了获取完整的 Git 历史记录）
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 步骤 2: 安装 Hugo
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true  # Blowfish 主题需要 extended 版本
+
+      # 步骤 3: 构建网站
+      - name: Build Hugo Site
+        run: hugo --gc --minify
+
+      # 步骤 4: 部署到 Cloudflare Pages
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy public --project-name=demmo-site
