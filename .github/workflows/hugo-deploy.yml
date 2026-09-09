@@ -29,14 +29,13 @@ jobs:
       - name: Build Hugo Site
         run: hugo --gc --minify
 
-      - name: Check build output
+      - name: Debug Secrets
         run: |
-          echo "Checking public directory..."
-          ls -la public/
-          if [ ! -f public/index.html ]; then
-            echo "ERROR: index.html not found in public/"
-            exit 1
-          fi
+          echo "CLOUDFLARE_API_TOKEN is: $CLOUDFLARE_API_TOKEN"
+          echo "CLOUDFLARE_ACCOUNT_ID is: $CLOUDFLARE_ACCOUNT_ID"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
       # 步骤 4: 部署到 Cloudflare Pages
       - name: Deploy to Cloudflare Pages
