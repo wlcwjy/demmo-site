@@ -25,8 +25,9 @@
       .then(data => {
         const el = document.getElementById(targetId);
         if (el) {
-          // 如果返回了 views 字段则显示，否则显示 0
-          el.innerText = data.count || 0;
+            // 如果返回了 views 字段则显示，否则显示 0
+            const currentText = el.innerText;
+            el.innerText = currentText.replace(/^\d+/, data.count || 0);
         }
       })
       .catch(err => {
