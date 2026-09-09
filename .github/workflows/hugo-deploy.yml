@@ -29,10 +29,23 @@ jobs:
       - name: Build Hugo Site
         run: hugo --gc --minify
 
+      - name: Debug Secrets (Check if they exist)
+        run: |
+          echo "Token length: ${#CLOUDFLARE_API_TOKEN}"
+          echo "Account ID: $CLOUDFLARE_ACCOUNT_ID"
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "::error::Token is empty! Check your secrets settings."
+            exit 1
+          fi
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
       # 步骤 4: 部署到 Cloudflare Pages
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy public --project-name=demmo-site --yes
+      - name: Deploy via npx (Simulate Local)
+        run: |
+          npm install -g wrangler@latest
+          wrangler pages deploy public --project-name=demmo-site --yes
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
