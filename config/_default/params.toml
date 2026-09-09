@@ -78,6 +78,7 @@ siteVersion = "1.0.1"
   disableHeroImageFilter = false # only used when layout equals hero
 
 [article]
+  showReadCount = true
   showDate = false
   showViews = true
   showLikes = false

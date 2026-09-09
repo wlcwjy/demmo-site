@@ -1,0 +1,37 @@
+{{/* layouts/partials/meta/read-count.html */}}
+
+{{- $uid := printf "rc-%s" (replace .RelPermalink "/" "-") }}
+
+<span class="flex items-center whitespace-nowrap" >
+  <span id="{{ $uid }}" class="text-[0.85em] text-neutral-500 dark:text-neutral-400 tabular-nums">
+    {{- i18n "article.views" 0 | markdownify | emojify -}}
+  </span>
+</span>
+
+<script>
+  (function() {
+    // 2. 获取当前文章的相对路径作为 Key
+    const path = "{{ .RelPermalink }}";
+    
+    // 3. 获取刚才生成的 ID
+    const targetId = "{{ $uid }}";
+    
+    // 4. 你的 Cloudflare Worker 地址 (请替换为你实际的 Worker 地址)
+    const workerUrl = "https://your-worker.your-subdomain.workers.dev/api/views"; 
+
+    // 5. 发起请求并更新 DOM
+    fetch(workerUrl + "?path=" + encodeURIComponent(path))
+      .then(response => response.json())
+      .then(data => {
+        const el = document.getElementById(targetId);
+        if (el) {
+          // 如果返回了 views 字段则显示，否则显示 0
+          el.innerText = data.views || 0;
+        }
+      })
+      .catch(err => {
+        // 请求失败时保持显示 "-" 或显示 0，不报错
+        console.log("View count fetch failed", err);
+      });
+  })();
+</script>
