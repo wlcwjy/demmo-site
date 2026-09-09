@@ -29,6 +29,15 @@ jobs:
       - name: Build Hugo Site
         run: hugo --gc --minify
 
+      - name: Check build output
+        run: |
+          echo "Checking public directory..."
+          ls -la public/
+          if [ ! -f public/index.html ]; then
+            echo "ERROR: index.html not found in public/"
+            exit 1
+          fi
+
       # 步骤 4: 部署到 Cloudflare Pages
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v4
