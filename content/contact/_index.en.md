@@ -12,7 +12,7 @@ cascade:
 
 ![地标](locate.jpeg)
 
-> - E-mail：wlc@demmo.com
+> - E-mail：wlc@demmo.top
 <!--# - Address: Room 2002, Building 5, Yangguang City, Nancheng District, Dongguan City, Guangdong Province, China -->
 
 > - Address: Nancheng District, Dongguan City, Guangdong Province, China

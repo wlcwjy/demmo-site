@@ -12,6 +12,6 @@ cascade:
 
 ![地标](locate.jpeg)
 
-> - 邮箱：wlc@demmo.com
+> - 邮箱：wlc@demmo.top
 
 > - 地址：广东省东莞市南城区
