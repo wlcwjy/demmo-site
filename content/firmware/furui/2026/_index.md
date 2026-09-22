@@ -41,4 +41,8 @@ cascade:
     NY8.6903.SOP8S.FS-125-4F.v0.zip
 </a>
 
+<a href="NY8.6904.SOP8S.FS502V0.zip" target="_blank" style="display: block; padding: 4px 50px; background-color: #0ea5e9; color: white; border-radius: 8px; text-decoration: none; text-align: center; font-weight: bold;">
+    NY8.6904.SOP8S.FS502V0.zip
+</a>
+
 </div>
