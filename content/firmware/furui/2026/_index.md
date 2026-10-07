@@ -33,16 +33,26 @@ cascade:
     NY8.6901.SOP8S.FS-163-FV0.zip
 </a>
 
-<a href="NY8.6902.SOP8S.FS501.zip" target="_blank" style="display: block; padding: 4px 50px; background-color: #0ea5e9; color: white; border-radius: 8px; text-decoration: none; text-align: center; font-weight: bold;">
+<a href="202609/NY8.6902.SOP8S.FS501.zip" target="_blank" style="display: block; padding: 4px 50px; background-color: #0ea5e9; color: white; border-radius: 8px; text-decoration: none; text-align: center; font-weight: bold;">
     NY8.6902.SOP8S.FS501.zip
 </a>
 
-<a href="NY8.6903.SOP8S.FS-125-4F.v0.zip" target="_blank" style="display: block; padding: 4px 50px; background-color: #0ea5e9; color: white; border-radius: 8px; text-decoration: none; text-align: center; font-weight: bold;">
+<a href="202609/NY8.6903.SOP8S.FS-125-4F.v0.zip" target="_blank" style="display: block; padding: 4px 50px; background-color: #0ea5e9; color: white; border-radius: 8px; text-decoration: none; text-align: center; font-weight: bold;">
     NY8.6903.SOP8S.FS-125-4F.v0.zip
 </a>
 
-<a href="NY8.6904.SOP8S.FS502V0.zip" target="_blank" style="display: block; padding: 4px 50px; background-color: #0ea5e9; color: white; border-radius: 8px; text-decoration: none; text-align: center; font-weight: bold;">
+<a href="202609/NY8.6904.SOP8S.FS502V0.zip" target="_blank" style="display: block; padding: 4px 50px; background-color: #0ea5e9; color: white; border-radius: 8px; text-decoration: none; text-align: center; font-weight: bold;">
     NY8.6904.SOP8S.FS502V0.zip
 </a>
+
+</div>
+
+## 2026年10月
+
+<div style="display: flex; flex-direction: column; gap: 10px; max-width: 600px;">
+
+<a href="202610/NY8.6A01.SOP8S.FS-0503V0.zip" target="_blank" style="display: block; padding: 4px 50px; background-color: #0ea5e9; color: white; border-radius: 8px; text-decoration: none; text-align: center; font-weight: bold;">
+    NY8.6A01.SOP8S.FS-0503V0.zip
+ </a>
 
 </div>
