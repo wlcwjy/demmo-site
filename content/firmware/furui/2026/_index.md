@@ -55,4 +55,21 @@ cascade:
     NY8.6A01.SOP8S.FS-0503V0.zip
  </a>
 
+ <a href="202610/NY8.6A02.SOP8S.FS498-1U1.zip" target="_blank" style="display: block; padding: 4px 50px; background-color: #0ea5e9; color: white; border-radius: 8px; text-decoration: none; text-align: center; font-weight: bold;">
+    NY8.6A02.SOP8S.FS498-1U1.zip
+ </a>
+
+ <a href="202610/NY8.6A03.SOP8S.FS498-1U2.zip" target="_blank" style="display: block; padding: 4px 50px; background-color: #0ea5e9; color: white; border-radius: 8px; text-decoration: none; text-align: center; font-weight: bold;">
+    NY8.6A03.SOP8S.FS498-1U2.zip
+ </a>
+
+
+  <a href="202610/NY8.6A04.SOP14S.FS125-6F.zip" target="_blank" style="display: block; padding: 4px 50px; background-color: #0ea5e9; color: white; border-radius: 8px; text-decoration: none; text-align: center; font-weight: bold;">
+    NY8.6A04.SOP14S.FS125-6F.zip
+ </a>
+
+  <a href="202610/NY8.6A05.SOP14S.FS408F.zip" target="_blank" style="display: block; padding: 4px 50px; background-color: #0ea5e9; color: white; border-radius: 8px; text-decoration: none; text-align: center; font-weight: bold;">
+    NY8.6A05.SOP14S.FS408F.zip
+ </a>
+
 </div>
