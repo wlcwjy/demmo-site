@@ -16,9 +16,20 @@
   weight = 10
 
 [[main]]
+  name = "博客"
+  weight = 30
+
+[[main]]
+  name = "RV-C"
+  parent = "博客"
+  pageRef = "/blogs/rv-c"
+  weight = 30  
+
+
+[[main]]
   name = "联系"
   pageRef = "/contact/"
-  weight = 15
+  weight = 40
 
 # [[main]]
 #   name = "示例"

@@ -16,9 +16,20 @@
   weight = 10
 
 [[main]]
+  name = "blogs"
+  weight = 30
+
+[[main]]
+  name = "RV-C"
+  parent = "blogs"
+  pageRef = "/blogs/rv-c"
+  weight = 30  
+
+
+[[main]]
   name = "contact"
   pageRef = "/contact/"
-  weight = 20
+  weight = 40
 
 #[[main]]
 #  name = "example sub-menu 1"
