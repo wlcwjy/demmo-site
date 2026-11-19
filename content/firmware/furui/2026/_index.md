@@ -92,7 +92,7 @@ cascade:
     NY8.6B03.SOP24S.FR-444-F-V0.zip
  </a>
 
- <a href="202611/NY8.6B04.SOP14S.FS-440F-V0.zipp" target="_blank" style="display: block; padding: 4px 50px; background-color: #0ea5e9; color: white; border-radius: 8px; text-decoration: none; text-align: center; font-weight: bold;">
+ <a href="202611/NY8.6B04.SOP14S.FS-440F-V0.zip" target="_blank" style="display: block; padding: 4px 50px; background-color: #0ea5e9; color: white; border-radius: 8px; text-decoration: none; text-align: center; font-weight: bold;">
     NY8.6B04.SOP14S.FS-440F-V0.zip
  </a>
 
